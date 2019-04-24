@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="zh"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>伺服手位置误差</Title>
+<Description>
+任务:<arg format="%s" ordinal="1" /><p />
+Hand_<arg format="%s" ordinal="2" />实际位置与目标位置存在小误差，已忽略。 <p />
+路径:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>夹取方向错误</Title>
+<Description>
+任务:<arg format="%s" ordinal="1" /><p />
+夹取方向错误，当前位置小于目标位置。<p />
+路径:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>
+1.检查伺服手当前的位置和目标位置。<p />
+2.检查夹取方向。<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>伺服手未标定</Title>
+<Description>
+任务:<arg format="%s" ordinal="1" /><p />
+Hand_<arg format="%s" ordinal="2" />未做标定。<p />
+路径:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>
+标定伺服手。<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>目标位置超出界限</Title>
+<Description>
+任务:<arg format="%s" ordinal="1" /><p />
+Hand_<arg format="%s" ordinal="2" />使用了错误的目标位置。 <p />
+路径:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>
+检查伺服手目标位置。<p />
+</Actions>
+
+</Message>
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>伺服手位置误差</Title>
+<Description>
+任务:<arg format="%s" ordinal="1" /><p />
+Hand_<arg format="%s" ordinal="2" />伺服手未能到达目标位置<p />
+路径:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>
+1.检查伺服手是否被阻碍。<p />
+2.检查伺服手的驱动链。<p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>夹取位置错误</Title>
+<Description>
+任务:<arg format="%s" ordinal="1" /><p />
+Hand_<arg format="%s" ordinal="2" />未在期望的位置夹取到物体。 <p />
+路径:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>
+1.检查物体是否夹到。<p />
+2.检查目标位置是否合适。<p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>夹取方向错误</Title>
+<Description>
+任务:<arg format="%s" ordinal="1" /><p />
+夹取方向错误，当前位置大于目标位置。<p />
+路径:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>
+1.检查伺服手当前位置和目标位置。<p />
+2.检查夹取方向。<p />
+</Actions>
+</Message>
+</Domain>

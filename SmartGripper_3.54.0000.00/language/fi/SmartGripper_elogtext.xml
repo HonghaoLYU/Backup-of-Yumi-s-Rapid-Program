@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Epätarkka tarraimen liike</Title>
+<Description>Taski: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> liikkui vähäisellä virheellä, ja se ohitetaan. <p />Konteksti:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Tarttumisen suuntavirhe</Title>
+<Description>Taski: <arg format="%s" ordinal="1" /><p />Ulospäin ei voi tarttua sisäänpäin suunnatulla voimalla.<p />Konteksti:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Tarkista tarraimen nykyinen tai kohdepiste.<p />2 Tarkista tarttumissuunta.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Tarrainta ei kalibroitu</Title>
+<Description>Taski: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> ei ole kalibroitu. <p />Konteksti:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Kalibroi tarrain.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Kohdepiste ylittää rajan</Title>
+<Description>Taski: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> kohdepiste on väärä. <p />Konteksti:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Tarkista kohdepiste. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Tarraimen liike epäonnistui</Title>
+<Description>Taski: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> ei pystynyt liikkumaan määrättyyn pisteeseen. <p />Konteksti:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Tarkista, onko tarraimen tiellä jotain. <p />2 Tarkista tarraimen voimansiirtoketju. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Tarttumisen asentovirhe</Title>
+<Description>Taski: <arg format="%s" ordinal="1" /><p />Hand_<arg format="%s" ordinal="2" /> ei ilmeisesti tarttunut kohteeseen odotetussa pisteessä. <p />Konteksti:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Tarkista tarttumisen kohdepiste. <p />2 Tarkista robotin asento. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Tarttumisen suuntavirhe</Title>
+<Description>Taski: <arg format="%s" ordinal="1" /><p />Sisäänpäin ei voi tarttua ulospäin suunnatulla voimalla.<p />Konteksti:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Tarkista tarraimen nykyinen tai kohdepiste.<p />2 Tarkista tarttumissuunta.  <p />
+</Actions>
+</Message>
+</Domain>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Megfogó helytelen mozgása</Title>
+<Description>Taszk: <arg format="%s" ordinal="1" /><p />A(z) Hand_ <arg format="%s" ordinal="2" /> kisebb hibával mozgott, amint a rendszer nem vett figyelembe. <p />Kontextus:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Fogási irány hibája</Title>
+<Description>Taszk: <arg format="%s" ordinal="1" /><p />Befelé irányuló erővel nem lehet kifelé fogni.<p />Kontextus:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1. Ellenőrizze a megfogó jelenlegi vagy célpozícióját.<p />2. Ellenőrizze a fogási irányt.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Nincs kalibrálva a kéz</Title>
+<Description>Taszk: <arg format="%s" ordinal="1" /><p />A(z) Hand_ <arg format="%s" ordinal="2" /> nincs kalibrálva. <p />Kontextus:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Kalibrálja a kezet.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>A célpozíció meghaladja a határértéket</Title>
+<Description>Taszk: <arg format="%s" ordinal="1" /><p />Helytelen a(z) Hand_ <arg format="%s" ordinal="2" /> célpozíciója. <p />Kontextus:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Ellenőrizze a célpozíciót. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Megfogó helytelen mozgása</Title>
+<Description>Taszk: <arg format="%s" ordinal="1" /><p />A(z) Hand_ <arg format="%s" ordinal="2" /> nem állt a hozzárendelt pozícióba. <p />Kontextus:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1. Ellenőrizze, nem blokkolja-e valami a megfogót. <p />2. Ellenőrizze a megfogó hajtóláncát. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Megfogó pozíciójának hibája</Title>
+<Description>Taszk: <arg format="%s" ordinal="1" /><p />A jelek szerint a(z) Hand_<arg format="%s" ordinal="2" /> nem fogta meg a munkadarabot a várt pozícióban. <p />Kontextus:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1. Ellenőrizze a megfogás célpozícióját. <p />2. Ellenőrizze a robot pozícióját. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Fogási irány hibája</Title>
+<Description>Taszk: <arg format="%s" ordinal="1" /><p />Kifelé irányuló erővel nem lehet befelé fogni.<p />Kontextus:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1. Ellenőrizze a megfogó jelenlegi vagy célpozícióját.<p />2. Ellenőrizze a fogási irányt.  <p />
+</Actions>
+</Message>
+</Domain>

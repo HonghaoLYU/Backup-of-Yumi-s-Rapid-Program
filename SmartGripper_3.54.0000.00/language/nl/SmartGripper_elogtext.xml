@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Onnauwkeurige grijperbeweging</Title>
+<Description>Taak: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> bewogen door een kleine fout en wordt genegeerd. <p />Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Fout grijprichting</Title>
+<Description>Taak: <arg format="%s" ordinal="1" /><p />Het is niet mogelijk op uitwaarts te grijpen met een inwaartse kracht.<p />Context:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Controleer de huidige of doelpositie van de grijper.<p />2 Controleer de grijprichting.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Grijper niet gekalibreerd</Title>
+<Description>Taak: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> is niet gekalibreerd. <p />Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Kalibreer de grijper.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Doelpositie overschrijdt de limiet</Title>
+<Description>Taak: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> heeft de verkeerde doelpositie <p />Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Controleer de doelpositie <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Mislukte grijperbeweging</Title>
+<Description>Taak: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> is er niet in geslaagd om naar de toegewezen positie te bewegen. <p />Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Controleer of de grijper is geblokkeerd. <p />2 Controleer de aandrijving van de grijper. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Fout grijppositie</Title>
+<Description>Taak: <arg format="%s" ordinal="1" /><p />Het lijkt erop dat Hand_<arg format="%s" ordinal="2" /> het object niet greep in de verwachte positie. <p />Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Controleer de doelpositie voor het grijpen. <p />2 Controleer de robotpositie. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Fout grijprichting</Title>
+<Description>Taak: <arg format="%s" ordinal="1" /><p />Het is niet mogelijk om inwaarts te grijpen met een uitwaartse kracht.<p />Context:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Controleer de huidige of doelpositie van de grijper.<p />2 Controleer de grijprichting.  <p />
+</Actions>
+</Message>
+</Domain>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Niedokładny ruch chwytaka</Title>
+<Description>Zadanie: <arg format="%s" ordinal="1" /><p />Nastąpiło przesunięcie Hand_ <arg format="%s" ordinal="2" /> z drobnym błędem, który jest ignorowany. <p />Kontekst:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Błąd kierunku chwytania</Title>
+<Description>Zadanie: <arg format="%s" ordinal="1" /><p />Chwytanie na zewnątrz z siłą działającą do wewnątrz nie jest możliwe.<p />Kontekst:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Sprawdź aktualną lub docelową pozycję chwytaka.<p />2 Sprawdź kierunek chwytania.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Chwytak nie jest skalibrowany</Title>
+<Description>Zadanie: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> nie jest skalibrowany. <p />Kontekst:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Skalibruj chwytak.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Pozycja docelowa wykracza poza limit</Title>
+<Description>Zadanie: <arg format="%s" ordinal="1" /><p />Nieprawidłowa pozycja docelowa Hand_ <arg format="%s" ordinal="2" />. <p />Kontekst:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Sprawdź pozycję docelową. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Błąd ruchu chwytaka</Title>
+<Description>Zadanie: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> nie ustawił się w wyznaczonej pozycji. <p />Kontekst:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Sprawdź, czy chwytak nie jest zablokowany. <p />2 Sprawdź łańcuch napędowy chwytaka. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Błąd pozycji chwytaka</Title>
+<Description>Zadanie: <arg format="%s" ordinal="1" /><p />Hand_<arg format="%s" ordinal="2" /> nie chwycił przedmiotu w oczekiwanej pozycji. <p />Kontekst:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Sprawdź docelową pozycję chwytania. <p />2 Sprawdź pozycję robota. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Błąd kierunku chwytania</Title>
+<Description>Zadanie: <arg format="%s" ordinal="1" /><p />Chwytanie do wewnątrz z siłą działającą na zewnątrz nie jest możliwe.<p />Kontekst:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Sprawdź aktualną lub docelową pozycję chwytaka.<p />2 Sprawdź kierunek chwytania.  <p />
+</Actions>
+</Message>
+</Domain>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Yanlış kavrayıcı hareketi</Title>
+<Description>İşlem: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> küçük bir hata ile hareket etti ve göz ardı edildi. <p />Bağlam:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Kavrama yönü hatası</Title>
+<Description>İşlem: <arg format="%s" ordinal="1" /><p />İçe doğru kuvvetle dışa doğru kavrama yapılamaz.<p />Bağlam:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Kavrayıcının geçerli veya hedef konumunu kontrol edin.<p />2 Kavrama yönünü kontrol edin.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>El kalibre edilmemiş</Title>
+<Description>İşlem: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> kalibre edilmemiş. <p />Bağlam:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Eli kalibre edin.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Hedef konum sınırı aşıyor</Title>
+<Description>İşlem: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> hedef konumu yanlış. <p />Bağlam:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Hedef konumu kontrol edin. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Başarısız kavrayıcı hareketi</Title>
+<Description>İşlem: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> belirtilen konuma hareket etmedi. <p />Bağlam:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Kavrayıcının sıkışmış olup olmadığını kontrol edin. <p />2 Kavrayıcı tahrik zincirini kontrol edin. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Kavrama konumu hatası</Title>
+<Description>İşlem: <arg format="%s" ordinal="1" /><p />Muhtemelen Hand_<arg format="%s" ordinal="2" /> nesneyi beklenen konumda kavramadı. <p />Bağlam:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Hedef kavrama konumunu kontrol edin. <p />2 Robot konumunu kontrol edin. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Kavrama yönü hatası</Title>
+<Description>İşlem: <arg format="%s" ordinal="1" /><p />Dışa doğru kuvvetle içe doğru kavrama yapılamaz.<p />Bağlam:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Kavrayıcının geçerli veya hedef konumunu kontrol edin.<p />2 Kavrama yönünü kontrol edin.  <p />
+</Actions>
+</Message>
+</Domain>

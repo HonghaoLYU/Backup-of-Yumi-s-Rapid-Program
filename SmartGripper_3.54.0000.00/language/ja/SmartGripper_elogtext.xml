@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>不正確なグリッパの移動</Title>
+<Description>タスク： <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> 移動時に少数のエラーが発生しましたが、それは無視されます。 <p />コンテキスト：<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>保持方向エラー</Title>
+<Description>タスク： <arg format="%s" ordinal="1" /><p />内向きの力で外向きに保持することはできません。<p />コンテキスト：<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 グリッパの現在位置またはターゲット位置を確認してください。<p />2 保持方向を確認してください。<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>ハンド未キャリブレーション</Title>
+<Description>タスク： <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> がキャリブレーションされていません。 <p />コンテキスト：<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>ハンドをキャリブレーションしてください。<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>ターゲット位置が制限を超えています</Title>
+<Description>タスク： <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> に誤ったターゲット位置が設定されています。 <p />コンテキスト：<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>ターゲット位置を確認してください。 <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>グリッパの移動に失敗しました</Title>
+<Description>タスク： <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> は割り当てられた位置に移動できませんでした。 <p />コンテキスト：<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 グリッパがブロックされているかどうかを確認してください。 <p />2 グリッパのドライブチェーンを確認してください。 <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>保持位置エラー</Title>
+<Description>タスク： <arg format="%s" ordinal="1" /><p />Hand_<arg format="%s" ordinal="2" /> は、期待される位置にオブジェクトを保持していなかったようです。 <p />コンテキスト：<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 ターゲット保持位置を確認してください。 <p />2 ロボットの位置を確認してください。 <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>保持方向エラー</Title>
+<Description>タスク： <arg format="%s" ordinal="1" /><p />外向きの力で内向きに保持することはできません。<p />コンテキスト：<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 グリッパの現在位置またはターゲット位置を確認してください。<p />2 保持方向を確認してください。  <p />
+</Actions>
+</Message>
+</Domain>

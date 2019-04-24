@@ -1,0 +1,10 @@
+<Version>
+  <Major>3</Major>
+  <Minor>5</Minor>
+  <Build>4</Build>
+  <Revision>0</Revision>
+  <Title>SmartGripperV3</Title>
+  <Description>SmartGripperV3 AddIn</Description>
+  <Date>2018-06-05</Date>
+  <Type>AdditionalOption</Type>
+</Version>

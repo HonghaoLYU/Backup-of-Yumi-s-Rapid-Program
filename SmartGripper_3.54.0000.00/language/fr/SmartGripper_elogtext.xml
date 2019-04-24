@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Déplacement imprécis du préhenseur</Title>
+<Description>Tâche : <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> déplacé avec erreur mineure ; ignoré. <p />Contexte :<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Erreur de direction de préhension</Title>
+<Description>Tâche : <arg format="%s" ordinal="1" /><p />Impossible de saisir un objet vers l&apos;extérieur avec une force intérieure.<p />Contexte :<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Vérifier la position actuelle ou cible du préhenseur.<p />2 Vérifier la direction de préhension.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Préhenseur non étalonné</Title>
+<Description>Tâche : <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> non étalonné. <p />Contexte :<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Étalonner le préhenseur.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>La position cible dépasse la limite</Title>
+<Description>Tâche : <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> comporte une position cible erronée. <p />Contexte :<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Vérifier la position cible. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Échec de déplacement du préhenseur</Title>
+<Description>Tâche : <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> n&apos;a pas pu atteindre la position attribuée. <p />Contexte :<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Vérifier si le préhenseur est bloqué. <p />2 Vérifier la chaîne d&apos;entraînement du préhenseur. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Erreur de position de préhension</Title>
+<Description>Tâche : <arg format="%s" ordinal="1" /><p />Il semble que Hand_<arg format="%s" ordinal="2" /> n&apos;ait pas saisi l&apos;objet dans la position attendue. <p />Contexte :<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Vérifier la position de préhension cible. <p />2 Vérifier la position du robot. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Erreur de direction de préhension</Title>
+<Description>Tâche : <arg format="%s" ordinal="1" /><p />Impossible de saisir un objet vers l&apos;intérieur avec une force extérieure.<p />Contexte :<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Vérifier la position actuelle ou cible du préhenseur.<p />2 Vérifier la direction de préhension.  <p />
+</Actions>
+</Message>
+</Domain>

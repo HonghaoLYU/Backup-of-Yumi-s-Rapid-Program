@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExtractTitles>
+<Title domain="11" number="2753">伺服手位置误差</Title>
+<Title domain="11" number="2754">夹取方向错误</Title>
+<Title domain="11" number="2755">伺服手未标定</Title>
+<Title domain="11" number="2757">目标位置超出界限</Title>
+<Title domain="11" number="2758">伺服手位置误差</Title>
+<Title domain="11" number="2759">夹取位置错误</Title>
+<Title domain="11" number="2760">夹取方向错误</Title>
+</ExtractTitles>

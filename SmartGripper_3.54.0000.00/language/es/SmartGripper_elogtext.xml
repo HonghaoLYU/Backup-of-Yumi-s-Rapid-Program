@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Movimiento inexacto de la pinza</Title>
+<Description>Tarea: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> se movió con un error leve, que se omite. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Error de dirección de agarre</Title>
+<Description>Tarea: <arg format="%s" ordinal="1" /><p />No es posible agarrar hacia fuera con una fuerza hacia dentro.<p />Contexto:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Compruebe la pos. actual u objetivo de la pinza.<p />2 Compruebe la dirección de agarre.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Mano no calibrada</Title>
+<Description>Tarea: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> no calibrada. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Calibre la mano.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Pos. objetivo más allá del límite</Title>
+<Description>Tarea: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> tiene una pos. objetivo incorrecta. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Compruebe su pos. objetivo. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Fallo de movimiento de la pinza</Title>
+<Description>Tarea: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> no pudo moverse hasta la posición asignada. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Compruebe si la pinza está obstruida. <p />2 Inspeccione la cadena cinemática de la pinza. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Error de posición de agarre</Title>
+<Description>Tarea: <arg format="%s" ordinal="1" /><p />Parece que Hand_<arg format="%s" ordinal="2" /> no sujetó ningún objeto en la posición esperada. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Compruebe la pos. de agarre objetivo. <p />2 Compruebe la pos. del robot. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Error de dirección de agarre</Title>
+<Description>Tarea: <arg format="%s" ordinal="1" /><p />No es posible agarrar hacia dentro con una fuerza hacia fuera.<p />Contexto:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Compruebe la pos. actual u objetivo de la pinza.<p />2 Compruebe la dirección de agarre.  <p />
+</Actions>
+</Message>
+</Domain>

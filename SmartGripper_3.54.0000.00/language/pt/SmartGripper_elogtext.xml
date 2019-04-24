@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Movimento impreciso do gripper</Title>
+<Description>Tarefa: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> moveu-se com pequeno erro, que foi ignorado. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Erro de direção de prendimento</Title>
+<Description>Tarefa: <arg format="%s" ordinal="1" /><p />Não é possível prender para o lado de fora com a força interna.<p />Contexto:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1. Verifique a posição atual ou de destino do gripper.<p />2. Verifique a direção de prendimento.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Ferramenta descalibrada</Title>
+<Description>Tarefa: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> não está calibrado. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Calibrar a ferramenta.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Posição de destino excede o limite</Title>
+<Description>Tarefa: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> tem uma posição de destino incorreta. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Verifique a posição de destino. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Falha no movimento do gripper</Title>
+<Description>Tarefa: <arg format="%s" ordinal="1" /><p />Não foi possível mover Hand_ <arg format="%s" ordinal="2" /> para a posição designada. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Verifique se o gripper está bloqueado. <p />2 Verifique a corrente de acionamento do gripper. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Erro de posição de prendimento</Title>
+<Description>Tarefa: <arg format="%s" ordinal="1" /><p />Parece que Hand_<arg format="%s" ordinal="2" /> não prendeu o objeto na posição esperada. <p />Contexto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Verifique a posição de prendimento de destino. <p />2 Verifique a posição do robô. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Erro de direção de prendimento</Title>
+<Description>Tarefa: <arg format="%s" ordinal="1" /><p />Não é possível prender para o lado de dentro com a força exterior.<p />Contexto:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1. Verifique a posição atual ou de destino do gripper.<p />2. Verifique a direção de prendimento.  <p />
+</Actions>
+</Message>
+</Domain>

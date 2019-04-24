@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Неточное движение схвата</Title>
+<Description>Задача: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> переместился с небольшой ошибкой и она была проигнорирована. <p />Контекст:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Ошибка направления схватывания</Title>
+<Description>Задача: <arg format="%s" ordinal="1" /><p />Невозможно осуществить захват наружу с силой, направленной внутрь.<p />Контекст:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Проверьте силу тока или целевое положение схвата.<p />2 Проверьте направления схватывания.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Схват не откалиброван</Title>
+<Description>Задача: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> не откалиброван. <p />Контекст:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Откалибруйте схват.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Целевое положение превышает ограничение</Title>
+<Description>Задача: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> имеет неправильное целевое положение. <p />Контекст:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Проверьте целевое положение. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Не удалось выполнить движение схвата</Title>
+<Description>Задача: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> не удалось переместить в указанное положение. <p />Контекст:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Проверьте, не заблокирован ли схват. <p />2 Проверьте приводную цепь схвата. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Ошибка положения схватывания</Title>
+<Description>Задача: <arg format="%s" ordinal="1" /><p />Кажется, что Hand_<arg format="%s" ordinal="2" /> не схватил объект в ожидаемом положении. <p />Контекст:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Проверьте целевое положение схватывания. <p />2 Проверьте положение робота. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Ошибка направления схватывания</Title>
+<Description>Задача: <arg format="%s" ordinal="1" /><p />Невозможно осуществить захват внутрь с силой, направленной наружу.<p />Контекст:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Проверьте силу тока или целевое положение схвата.<p />2 Проверьте направления схватывания.  <p />
+</Actions>
+</Message>
+</Domain>

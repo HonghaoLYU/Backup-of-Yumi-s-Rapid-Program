@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Nesprávný pohyb ruky</Title>
+<Description>Úloha: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> posunut s malou chybou a je ignorováno. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Chyba směru uchopení</Title>
+<Description>Úloha: <arg format="%s" ordinal="1" /><p />Není možné uchopení ven se silou dovnitř.<p />Kontext:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Zkontrolujte proud ruky nebo cílovou polohu.<p />2 Zkontrolujte směr uchopení.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Ruka není zkalibrována</Title>
+<Description>Úloha: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> není zkalibrováno. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Zkalibrujte ruku.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Cílová poloha překračuje limit</Title>
+<Description>Úloha: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> má nesprávnou cílovou polohu. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Zkontrolujte svoji cílovou polohu. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Selhal pohyb ruky</Title>
+<Description>Úloha: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> selhalo při pohybu do přidělené polohy. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Zkontrolujte, jestli je ruka blokována. <p />2 Zkontrolujte hnací řetěz ruky. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Chyba polohy uchopení</Title>
+<Description>Úloha: <arg format="%s" ordinal="1" /><p />Zdá se, že Hand_<arg format="%s" ordinal="2" /> neuchopilo předmět v očekávané poloze. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Zkontrolujte cílovou polohu uchopení. <p />2 Zkontrolujte polohu robota. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Chyba směru uchopení</Title>
+<Description>Úloha: <arg format="%s" ordinal="1" /><p />Není možné uchopení ven se silou dovnitř.<p />Kontext:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Zkontrolujte proud ruky nebo cílovou polohu.<p />2 Zkontrolujte směr uchopení.  <p />
+</Actions>
+</Message>
+</Domain>

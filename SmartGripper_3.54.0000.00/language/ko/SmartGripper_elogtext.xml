@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>부정확한 그리퍼 이동</Title>
+<Description>태스크: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" />(이)가 사소한 오류로 인해 이동되어 무시되었습니다. <p />컨텍스트:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>그리핑 방향 오류</Title>
+<Description>태스크: <arg format="%s" ordinal="1" /><p />구심력으로 바깥쪽을 잡을 수 없습니다.<p />컨텍스트:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 그리퍼의 현재 또는 대상 위치를 확인하십시오.<p />2 잡는 방향을 확인하십시오.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>그리퍼가 영점 조정되지 않음</Title>
+<Description>태스크: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" />이(가) 영점 조정되지 않습니다. <p />컨텍스트:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>그리퍼를 영점 조정합니다.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>목표 위치가 제한을 벗어납니다.</Title>
+<Description>태스크: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" />의 대상 위치가 잘못되었습니다. <p />컨텍스트:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>대상 위치를 확인하십시오. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>그리퍼 이동 실패</Title>
+<Description>태스크: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" />이(가) 지정된 위치로 이동하지 못했습니다. <p />컨텍스트:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 그리퍼가 막혔는지 확인하십시오. <p />2 그리퍼의 드라이브 체인을 확인하십시오. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>그리핑 위치 오류</Title>
+<Description>태스크: <arg format="%s" ordinal="1" /><p />Hand_<arg format="%s" ordinal="2" />이(가) 예상 위치에서 개체를 잡지 못한 것 같습니다. <p />컨텍스트:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 대상 그리핑 위치를 확인하십시오. <p />2 로봇 위치를 확인하십시오. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>그리핑 방향 오류</Title>
+<Description>태스크: <arg format="%s" ordinal="1" /><p />원심력으로 안쪽을 잡을 수 없습니다.<p />컨텍스트:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 그리퍼의 현재 또는 대상 위치를 확인하십시오.<p />2 잡는 방향을 확인하십시오.  <p />
+</Actions>
+</Message>
+</Domain>

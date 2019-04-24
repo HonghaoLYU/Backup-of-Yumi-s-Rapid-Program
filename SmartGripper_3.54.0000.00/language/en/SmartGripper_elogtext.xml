@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Inaccurate gripper moving</Title>
+<Description>
+Task: <arg format="%s" ordinal="1" /><p />
+Hand_ <arg format="%s" ordinal="2" /> moved with minor error and it's ignored. <p />
+Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Gripping direction error</Title>
+<Description>
+Task: <arg format="%s" ordinal="1" /><p />
+It's not possible to grip outward with an inward force.<p />
+Context:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>
+1 Check gripper current or target pos.<p />
+2 Check gripping direction.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Hand not calibrated</Title>
+<Description>
+Task: <arg format="%s" ordinal="1" /><p />
+Hand_ <arg format="%s" ordinal="2" /> is not calibrated. <p />
+Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>
+Calibrate the hand.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Target pos exceeds the limit</Title>
+<Description>
+Task: <arg format="%s" ordinal="1" /><p />
+Hand_ <arg format="%s" ordinal="2" /> has a wrong target pos. <p />
+Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>
+Check you target pos. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Failed gripper moving</Title>
+<Description>
+Task: <arg format="%s" ordinal="1" /><p />
+Hand_ <arg format="%s" ordinal="2" /> failed to move to assigned position. <p />
+Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>
+1 Check whether gripper is blocked. <p />
+2 Check gripper's drive chain. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Gripping position error</Title>
+<Description>
+Task: <arg format="%s" ordinal="1" /><p />
+It seems Hand_<arg format="%s" ordinal="2" /> did not grip object in expected position. <p />
+Context:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>
+1 Check target gripping pos. <p />
+2 Check robot pos. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Gripping direction error</Title>
+<Description>
+Task: <arg format="%s" ordinal="1" /><p />
+It's not possible to grip inward with an outward force.<p />
+Context:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>
+1 Check gripper current or target pos.<p />
+2 Check gripping direction.  <p />
+</Actions>
+</Message>
+</Domain>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Ungenaue Greiferbewegung</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> mit geringfügigem Fehler bewegt; wird ignoriert. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Greiferrichtungsfehler</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Es ist nicht möglich, mit einer einwärts wirkenden Kraft nach außen zu greifen.<p />Kontext:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Aktuelle Position oder Zielposition des Greifers prüfen.<p />2 Greifrichtung prüfen.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Greifer nicht kalibriert</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> ist nicht kalibriert. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Greifer kalibrieren.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Zielposition überschreitet die Begrenzung</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> hat eine falsche Zielposition. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Zielposition prüfen. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Fehlgeschlagene Greiferbewegung</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> konnte nicht zur zugeordneten Position bewegt werden. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Prüfen, ob der Greifer blockiert ist. <p />2 Die Antriebskette des Greifers prüfen. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Greiferpositionsfehler</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> hat das Objekt wahrscheinlich nicht in der erwarteten Position gegriffen. <p />Kontext:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Zielgreifposition prüfen. <p />2 Roboterposition prüfen. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Greiferrichtungsfehler</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Es ist nicht möglich, mit einer auswärts wirkenden Kraft nach innen zu greifen.<p />Kontext:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Aktuelle Position oder Zielposition des Greifers prüfen.<p />2 Greifrichtung prüfen.  <p />
+</Actions>
+</Message>
+</Domain>

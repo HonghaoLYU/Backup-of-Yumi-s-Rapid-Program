@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Movimento impreciso della pinza</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> spostata con errore minimo e ignorata. <p />Contesto:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Errore di direzione della presa</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Non è possibile effettuare la presa verso l&apos;esterno con una forza diretta verso l&apos;interno.<p />Contesto:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Verificare la posizione attuale o target della pinza.<p />2 Verificare la direzione della presa.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Mano non calibrata</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> non calibrata. <p />Contesto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Calibrare la mano.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Posizione target oltre il limite</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> ha una posizione target errata. <p />Contesto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Verificare la posizione target. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Movimento della pinza non riuscito</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> non è riuscita a raggiungere la posizione assegnata. <p />Contesto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Verificare che la pinza non sia bloccata. <p />2 Verificare la catena di trasmissione della pinza. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Errore di posizione della presa</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Sembra che Hand_<arg format="%s" ordinal="2" /> non afferri l&apos;oggetto nella posizione prevista. <p />Contesto:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Verificare la posizione target della presa. <p />2 Verificare la posizione del robot. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Errore di direzione della presa</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Non è possibile effettuare la presa verso l&apos;interno con una forza diretta verso l&apos;esterno.<p />Contesto:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Verificare la posizione attuale o target della pinza.<p />2 Verificare la direzione della presa.  <p />
+</Actions>
+</Message>
+</Domain>

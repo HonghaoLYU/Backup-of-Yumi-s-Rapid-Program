@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*********************************************-->
+<!--The text description file for Elog Messages -->
+<Domain elogDomain="PROC" domainNo="11" lang="en"
+elogTextVersion="1.0" xmlns="urn:abb-robotics-elog-text"
+min="2753" max="2760">
+<Message number="2753" eDefine="ERRID_HAND_FAILEDMOVE">
+<Title>Inexakt förflyttning av gripdon</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Ett smärre fel inträffade vid förflyttningen av Hand_ <arg format="%s" ordinal="2" /> och detta har ignorerats. <p />Sammanhang:<arg format="%s" ordinal="3" /><p />
+</Description>
+</Message>
+
+<Message number="2754" eDefine="ERRID_HAND_FAILEDGRIPINWARD">
+<Title>Gripriktningsfel</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Det går inte att gripa utåt med en inåtriktad kraft.<p />Sammanhang:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Kontrollera gripdonets aktuella position eller dess målposition.<p />2 Kontrollera gripriktningen.<p />
+</Actions>
+</Message>
+
+<Message number="2755" eDefine="ERRID_HAND_NOTCALIBRATED">
+<Title>Handen har inte kalibrerats</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> har inte kalibrerats. <p />Sammanhang:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Kalibrera handen.<p />
+</Actions>
+</Message>
+
+<Message number="2757" eDefine="ERRID_HAND_INCORRECTPARAS">
+<Title>Målpositionen överskrider gränsen</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> har en felaktig målposition. <p />Sammanhang:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>Kontrollera målpositionen. <p />
+</Actions>
+</Message>
+
+<Message number="2758" eDefine="ERRID_HAND_FAILEDMOVEPOS">
+<Title>Misslyckad förflyttning av gripdon</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Hand_ <arg format="%s" ordinal="2" /> misslyckades med förflyttningen till den avsedda positionen. <p />Sammanhang:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Kontrollera om gripdonet är blockerat. <p />2 Kontrollera gripdonets drivkedja. <p />
+</Actions>
+</Message>
+
+<Message number="2759" eDefine="ERRID_HAND_FAILEDGRIPPOS">
+<Title>Grippositionsfel</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Det verkar som att Hand_<arg format="%s" ordinal="2" /> inte grep objektet i den förväntade positionen. <p />Sammanhang:<arg format="%s" ordinal="3" /><p />
+</Description>
+<Actions>1 Kontrollera målgrippositionen. <p />2 Kontrollera robotens position. <p />
+</Actions>
+</Message>
+
+<Message number="2760" eDefine="ERRID_HAND_FAILEDGRIPOUTWARD">
+<Title>Gripriktningsfel</Title>
+<Description>Task: <arg format="%s" ordinal="1" /><p />Det går inte att gripa inåt med en utåtriktad kraft.<p />Sammanhang:<arg format="%s" ordinal="2" /><p />
+</Description>
+<Actions>1 Kontrollera gripdonets aktuella position eller dess målposition.<p />2 Kontrollera gripriktningen.  <p />
+</Actions>
+</Message>
+</Domain>
